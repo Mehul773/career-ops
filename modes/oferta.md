@@ -11,26 +11,21 @@ Classify the job into one of the 6 archetypes (see `_shared.md`). If it is a hyb
 
 ## Block A — Role Summary
 
-Table with:
-- Archetype detected
-- Domain (platform/agentic/LLMOps/ML/enterprise)
-- Function (build/consult/manage/deploy)
-- Seniority
-- Remote (full/hybrid/onsite)
-- Team size (if mentioned)
-- TL;DR in 1 sentence
+A structured list including:
+- **Archetype detected:** [detected archetype]
+- **Domain:** [platform/agentic/LLMOps/ML/enterprise/etc.]
+- **Function:** [build/consult/manage/deploy]
+- **Seniority:** [seniority level]
+- **Remote:** [full/hybrid/onsite]
+- **Team size:** [if mentioned]
+- **TL;DR:** [in 1 sentence]
 
 ## Block B — Match with CV
 
-Read `cv.md`. Create a table with each JD requirement mapped to exact lines in the CV.
-
-**Adapted to the archetype:**
-- If FDE → prioritize delivery speed and client-facing proof points
-- If SA → prioritize system design and integrations
-- If PM → prioritize product discovery and metrics
-- If LLMOps → prioritize evals, observability, pipelines
-- If Agentic → prioritize multi-agent, HITL, orchestration
-- If Transformation → prioritize change management, adoption, scaling
+Read `cv.md`. For each key JD requirement, list:
+- **Requirement:** [JD requirement text]
+  - **Match from CV:** [brief summary of matching experience/achievements; do NOT copy large text blocks]
+  - **Gaps & Mitigation:** [mitigation strategy or adjacent experience]
 
 **Gaps** section with mitigation strategy for each. For each gap:
 1. Is it a hard blocker or a nice-to-have?
@@ -51,25 +46,28 @@ Use WebSearch for:
 - Company's compensation reputation
 - Demand trend for the role
 
-Table with data and cited sources. If there is no data, state it instead of inventing.
+List the data and cited sources. If there is no data, state it instead of inventing.
 
 ## Block E — Customization Plan
 
-| # | Section | Current status | Proposed change | Why |
-|---|---------|---------------|------------------|---------|
-| 1 | Summary | ... | ... | ... |
-| ... | ... | ... | ... | ... |
-
-Top 5 changes to CV + Top 5 changes to LinkedIn to maximize match.
+List of top 5 changes to CV + Top 5 changes to LinkedIn to maximize match:
+For each change, provide:
+- **Change #X:** [Section name]
+  - **Current status:** [how it is written now]
+  - **Proposed change:** [how to rewrite it]
+  - **Why:** [rationale]
 
 ## Block F — Interview Plan
 
-6-10 STAR+R stories mapped to JD requirements (STAR + **Reflection**):
-
-| # | JD Requirement | STAR+R Story | S | T | A | R | Reflection |
-|---|-----------------|-----------------|---|---|---|---|------------|
-
-The **Reflection** column captures what was learned or what would be done differently. This signals seniority — junior candidates describe what happened, senior candidates extract lessons.
+6-10 STAR+R stories mapped to JD requirements:
+For each story, provide:
+- **Story #X:** [Story Name]
+  - **JD Requirement:** [matching requirement]
+  - **Situation:** [S]
+  - **Task:** [T]
+  - **Action:** [A]
+  - **Result:** [R]
+  - **Reflection:** [what was learned or what would be done differently, signaling seniority]
 
 **Story Bank:** If `interview-prep/story-bank.md` exists, check if any of these stories are already there. If not, append new ones. Over time this builds a reusable bank of 5-10 master stories that can be adapted to any interview question.
 
@@ -128,7 +126,7 @@ Analyze the job posting for signals that indicate whether this is a real, active
 - **Proceed with Caution** -- Mixed signals worth noting
 - **Suspicious** -- Multiple ghost job indicators, investigate before investing time
 
-**Signals table:** Each signal observed with its finding and weight (Positive / Neutral / Concerning).
+**Signals observed:** List each signal observed with its finding and weight (Positive / Neutral / Concerning).
 
 **Context Notes:** Any caveats (niche role, government job, evergreen position, etc.) that explain potentially concerning signals.
 

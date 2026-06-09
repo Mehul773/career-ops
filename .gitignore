@@ -48,3 +48,11 @@ bun.lock
 .claude/memory/
 career-dashboard
 package-lock.json
+
+# Local Agent/IDE/DB cache directories
+.gemini/
+.codegraph/
+.qwen/
+.claude-plugin/
+*.pid
+portfolio/

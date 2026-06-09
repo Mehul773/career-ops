@@ -223,7 +223,8 @@ IMPORTANT OPERATING RULES FOR THIS CLI SESSION
    - For Block G (Legitimacy): analyze the JD text only; skip URL/page freshness checks.
    - Post-evaluation file saving is handled by the script, not by you.
 2. Generate Blocks A through G in full, in English, unless the JD is in another language.
-3. At the very end, output a machine-readable summary block in this exact format:
+3. CRITICAL: When outputting markdown tables, do NOT repeat hyphens in separator lines. Keep them minimal (e.g., use exactly |---|---| to separate headers from rows). Never output more than 10 consecutive hyphens in any table separator cell, as it crashes the terminal parser.
+4. At the very end, output a machine-readable summary block in this exact format:
 
 ---SCORE_SUMMARY---
 COMPANY: <company name or "Unknown">
