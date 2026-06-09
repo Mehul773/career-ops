@@ -6,6 +6,7 @@
  */
 
 import { classifyLiveness } from './liveness-core.mjs';
+import { scrapeUrl, shouldUseStealthDirectly, isBlockedContent } from './stealth-scraper.mjs';
 
 const NAVIGATE_TIMEOUT_MS = 15_000;
 const HYDRATION_WAIT_MS = 2_000;
@@ -51,49 +52,82 @@ export async function checkUrlLiveness(page, url) {
     return { result: 'uncertain', code: guardError.code, reason: guardError.reason };
   }
   try {
-    const response = await page.goto(url, { waitUntil: 'domcontentloaded', timeout: NAVIGATE_TIMEOUT_MS });
-    const status = response?.status() ?? 0;
+    const useStealth = shouldUseStealthDirectly(url);
+    let title, bodyText, applyControls, status = 200, finalUrl = url;
 
-    // Give SPAs (Ashby, Lever, Workday) time to hydrate
-    await page.waitForTimeout(HYDRATION_WAIT_MS);
+    if (useStealth) {
+      console.log(`[liveness-browser] Direct routing to CloakBrowser for protected URL: ${url}`);
+      const res = await scrapeUrl(url);
+      bodyText = res.bodyText;
+      applyControls = res.applyControls;
+      title = res.title;
+    } else {
+      const response = await page.goto(url, { waitUntil: 'domcontentloaded', timeout: NAVIGATE_TIMEOUT_MS });
+      status = response?.status() ?? 0;
+      await page.waitForTimeout(HYDRATION_WAIT_MS);
+      finalUrl = page.url();
+      title = await page.title();
+      bodyText = await page.evaluate(() => document.body?.innerText ?? '');
 
-    const finalUrl = page.url();
-    const bodyText = await page.evaluate(() => document.body?.innerText ?? '');
-    const applyControls = await page.evaluate(() => {
-      const candidates = Array.from(
-        document.querySelectorAll('a, button, input[type="submit"], input[type="button"], [role="button"]')
-      );
+      if (status === 403 || isBlockedContent(title, bodyText)) {
+        console.log(`[liveness-browser] Standard page blocked for ${url} (status: ${status}, title: "${title}"). Falling back to CloakBrowser...`);
+        const res = await scrapeUrl(url);
+        bodyText = res.bodyText;
+        applyControls = res.applyControls;
+        title = res.title;
+      } else {
+        applyControls = await page.evaluate(() => {
+          const candidates = Array.from(
+            document.querySelectorAll('a, button, input[type="submit"], input[type="button"], [role="button"]')
+          );
 
-      return candidates
-        .filter((element) => {
-          if (element.closest('nav, header, footer')) return false;
-          if (element.closest('[aria-hidden="true"]')) return false;
+          return candidates
+            .filter((element) => {
+              if (element.closest('nav, header, footer')) return false;
+              if (element.closest('[aria-hidden="true"]')) return false;
 
-          const style = window.getComputedStyle(element);
-          if (style.display === 'none' || style.visibility === 'hidden') return false;
-          if (!element.getClientRects().length) return false;
+              const style = window.getComputedStyle(element);
+              if (style.display === 'none' || style.visibility === 'hidden') return false;
+              if (!element.getClientRects().length) return false;
 
-          return Array.from(element.getClientRects()).some((rect) => rect.width > 0 && rect.height > 0);
-        })
-        .map((element) => {
-          const label = [
-            element.innerText,
-            element.value,
-            element.getAttribute('aria-label'),
-            element.getAttribute('title'),
-          ]
-            .filter(Boolean)
-            .join(' ')
-            .replace(/\s+/g, ' ')
-            .trim();
+              return Array.from(element.getClientRects()).some((rect) => rect.width > 0 && rect.height > 0);
+            })
+            .map((element) => {
+              const label = [
+                element.innerText,
+                element.value,
+                element.getAttribute('aria-label'),
+                element.getAttribute('title'),
+              ]
+                .filter(Boolean)
+                .join(' ')
+                .replace(/\s+/g, ' ')
+                .trim();
 
-          return label;
-        })
-        .filter(Boolean);
-    });
+              return label;
+            })
+            .filter(Boolean);
+        });
+      }
+    }
 
     return classifyLiveness({ status, finalUrl, bodyText, applyControls });
   } catch (err) {
+    const useStealth = shouldUseStealthDirectly(url);
+    if (!useStealth) {
+      console.warn(`[liveness-browser] Navigation error: ${err.message}. Retrying with CloakBrowser...`);
+      try {
+        const res = await scrapeUrl(url);
+        return classifyLiveness({
+          status: 200,
+          finalUrl: url,
+          bodyText: res.bodyText,
+          applyControls: res.applyControls
+        });
+      } catch (fallbackErr) {
+        console.error(`[liveness-browser] Fallback scrape also failed: ${fallbackErr.message}`);
+      }
+    }
     // Transient failures (timeout, DNS, TLS, 5xx) shouldn't be treated as expired —
     // doing so would cause scan --verify to drop the URL and write it to scan-history,
     // permanently filtering it out on subsequent scans.
