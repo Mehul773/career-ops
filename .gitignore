@@ -56,3 +56,5 @@ package-lock.json
 .claude-plugin/
 *.pid
 portfolio/
+documents/*
+!documents/README.md
