@@ -21,7 +21,7 @@ import { existsSync, mkdirSync } from 'fs';
 const REQUIRED_SECTIONS = [
   '\\\\section{Education}',
   '\\\\section{Work Experience}',
-  '\\\\section{Projects}',
+  '\\\\section{Personal Projects}',
   '\\\\section{Technical Skills}',
 ];
 

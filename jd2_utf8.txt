@@ -1,0 +1,363 @@
+﻿[stealth-scraper] Direct routing to CloakBrowser for protected domain: https://www.naukri.com/job-listings-mern-stack-developer-required-2-6-years-exp-us-shift-prime-apps-infotech-ahmedabad-2-to-5-years-090626023544
+Jobs
+Popular categories
+IT jobs
+Sales jobs
+Marketing jobs
+Data Science jobs
+HR jobs
+Engineering jobs
+Jobs in demand
+Fresher jobs
+MNC jobs
+Remote jobs
+Work from home jobs
+Walk-in jobs
+Part-time jobs
+Jobs by location
+Jobs in Delhi
+Jobs in Mumbai
+Jobs in Bangalore
+Jobs in Hyderabad
+Jobs in Chennai
+Jobs in Pune
+Companies
+Explore categories
+Unicorn
+MNC
+Startup
+Product based
+Internet
+Explore collections
+Top companies
+IT companies
+Fintech companies
+Sponsored companies
+Featured companies
+Research companies
+by
+Ambitionbox
+Interview questions
+Company salaries
+Company reviews
+Salary Calculator
+Services
+Resume writing
+Text resume
+Visual resume
+Resume critique
+Find Jobs
+Jobs4u
+Priority applicant
+Contact us
+Get recruiter's attention
+Resume display
+Monthly subscriptions
+Basic & premium plans
+Free resume resources
+Resume maker
+Resume quality score
+Resume samples
+Job letter samples
+Search jobs here
+LoginRegister
+For employers
+Buy online
+Naukri Talent Cloud
+Employer Login
+MERN Stack Developer required (2-6 Years exp) - US Shift
+Prime Apps Infotech
+4.111 Reviews
+2 - 5 years
+4-8 Lacs P.A.
+Ahmedabad
+Posted: 1 day ago
+Openings: 5
+Applicants: 100+
+Register to apply
+Login to apply
+Job description
+
+
+Job Title: MERN Stack Developer - US Shift
+
+Location: Mondeal Heights, Iscon Cross Roads, Ahmedabad
+
+Job Type: Full-Time (2:30 PM to 12:00 AM IST) work from office
+
+
+Job Description:
+
+We are looking for a skilled MERN Stack Developer to join our team. The ideal candidate should have experience in developing modern web applications using MongoDB, Express.js, React.js, and Node.js. You will work on exciting projects, collaborating with designers and backend developers to build scalable and high-performance applications.
+
+
+Key Responsibilities:
+
+Develop, test, and maintain web applications using MERN stack.
+Write clean, efficient, and reusable code following best practices.
+Collaborate with UI/UX designers to implement front-end components.
+Develop RESTful APIs and integrate them with front-end applications.
+Optimize application performance and scalability.
+Troubleshoot, debug, and enhance existing applications.
+Work with databases like MongoDB, ensuring smooth data flow.
+Stay up-to-date with emerging technologies and trends in web development.
+
+
+
+Required Skills:
+
+Strong proficiency in React.js, Node.js, Express.js, and MongoDB.
+
+Experience with Redux, Hooks, and Component-based Architecture.
+
+Knowledge of REST APIs, GraphQL (optional), and authentication (JWT, OAuth).
+
+Familiarity with Git/GitHub, CI/CD, and Agile methodologies.
+
+Strong problem-solving skills and ability to work in a fast-paced environment.
+
+Hands-on experience in coding and problem solving using AI tools like GitHub Copilot, Windsurf, Cursor, etc.
+
+Preferred Skills (Good to Have):
+
+Experience with Next.js for server-side rendering (SSR).
+
+Knowledge of Docker, AWS, Firebase, or cloud platforms.
+
+Experience with TypeScript and Microservices Architecture.
+
+
+Qualifications:
+
+Bachelor's/Masters degree in Computer Science, IT, or a related field.
+
+
+Why Join Us?
+
+5 Days working
+
+No sandwich leave deduction
+
+Leave encashment
+
+Work with a dynamic team on cutting-edge technologies.
+
+Competitive salary
+
+Opportunity to learn and grow in a fast-paced environment.
+
+Flexible work culture
+
+How to Apply?
+
+If you are passionate about web development and want to grow your career, apply now! Alternatively, you can send an email to jobs@primeapps.in
+
+Role: Full Stack Developer
+Industry Type: IT Services & Consulting
+Department: Engineering - Software & QA
+Employment Type: Full Time, Permanent
+Role Category: Software Development
+Education
+UG: B.Tech / B.E. in Computer Science and Engineering (CSE), Computer Science and Business System, Information Technology, Artificial Intelligence And Data Science, Artificial Intelligence And Machine Learning
+PG: M.Tech in Artificial Intelligence and Machine Learning, Computers
+Key Skills
+Skills highlighted with ΓÇÿΓÇÿ are preferred keyskills
+Mern Stack
+Fullstack DevelopmentNode.JsMongoDBAWSBackend Development
+About company
+
+Prime Apps Infotech is a Global IT Outsourcing company. We are delivering Web development, Mobile apps development, E-commerce development, OTT apps development, Custom solution and technology consulting services to corporates and businesses around the world since 2011. We are committed to excellence by the disciplined process and systematic approach. Our process has yield successful results for global clients ranging from Startups to MNCs. We provide them the best possible solutions to enhance their business significantly and take them to the next level of success.
+
+Company Info
+Address:
+B - 609, Mondeal Heights , AHMEDABAD, Gujarat, India
+Beware of imposters!
+Naukri.com does not promise a job or an interview in exchange of money. Fraudsters may ask you to pay in the pretext of registration fee, Refundable FeeΓÇªRead more
+Similar jobs
+Senior Mern Stack Developer
+Adintors2.45 reviews
+Ahmedabad
+Node.Js
+Microservices
+Javascript
+React.Js
+AWS
+Express
+Postgresql
+Mern Stack
+Typescript
+Fullstack Development
+Claude Code
+MongoDB
+Expresjs
+Stack
+Posted 20 days ago
+MERN Stack Developer (Surat Location On-Site)
+Virtueaze
+Surat
+React.Js
+Mern Stack
+Redux
+Node.Js
+Development
+Mern
+Stack
+Posted 13 days ago
+Mern Stack Developer
+Tops Infosolutions3.874 reviews
+Ahmedabad
+Mern
+Mern Stack
+MySQL
+MongoDB
+React.Js
+Express
+Postgresql
+Deployment
+Node.Js
+Typescript
+Javascript
+AWS
+Nestjs
+Development
+Posted 9 days ago
+Full Stack Developer (React)
+Synoverge Technologies3.775 reviews
+Ahmedabad
+React.Js
+Nextjs
+Fullstack Development
+Postgresql
+Redis
+Nestjs
+Development
+Full Stack
+Stack
+Posted 21 days ago
+MERN Stack Developer
+Leading Client
+Posted by IOSPL Technology Services Private Limited
+Mumbai, Delhi / NCR, Bengaluru
+Node.js
+MERN Stack
+MongoDB
+React.js
+RESTful API
+UI/UX design
+Third-party API integration
+Performance optimization
+Express.js
+GIT
+Agile
+CI/CD
+Bootstrap
+Scrum
+API
+AWS
+Ui And Ux
+UI
+UI/UX
+Posted 16 days ago
+Roles from top companies
+Fullstack Developer
+Large IT Services & Consulting Firm
+2-5 Yrs
+5-10 Lacs P.A.
+Mumbai, Pune, Gurugram, Chennai, Bengaluru
+Hiring for one of these companies
+5d ago
+Fullstack Developer
+Large IT MNC
+2-6 Yrs
+6-11 Lacs P.A.
+Hyderabad
+Hiring for one of these companies
+14h ago
+Register to unlock
+Jobs you might be interested in
+Zoho Developer
+Vartopia
+3.39 reviews
+Mohali
+Posted 1 day ago
+Software Development Engineer 2
+HiLITE Group
+3.738 reviews
+Kozhikode
+Posted 1 day ago
+IT Software Engineer
+NiCE
+3.6653 reviews
+Hybrid - Pune
+Posted 1 day ago
+Full Stack Developer
+Demazi Technologies
+Mumbai
+Posted 1 day ago
+Senior Backend Developer
+Lykora Consulting
+Posted by Lykora Consulting
+Udupi
+Posted 1 day ago
+Reviews
+View all
+
+11 employee reviews
+
+5.0
+
+rated by Senior Front end Developer in Ahmedabad
+
+Likes
+
+I have had great experiences working with the PrimeApps team. The work culture is positive and supportive. Everyone is respectful and helpful, and it feel like a comfortable place to work and grow.
+
+Dislikes
+
+NA
+
+Read full review
+Powered by
+Salary insights
+
+Mern Stack Developer in Prime Apps Infotech typically earns between
+
+Γé╣3.7 - Γé╣4.1 L/yr
+See detailed salary breakup
+Powered by
+Benefits & Perks
+View all
+4 employees reported these benefits
+Job/Soft skill training
+Office cab/shuttle
+Powered by
+Services you might be
+interested in
+Know more
+Resume Display
+Increase your profile visibility to recruiters upto 3 times
+Get a Featured Profile, Stand out and get noticed in recruiter eyes.
+* May include paid services
+HomeJobs in┬áAhmedabad
+
+IEIL has taken all reasonable steps to ensure that information on this site is authentic. Applicants are advised to research bonafides of advertisers independently. IEIL shall not have any responsibility in this regard. We also recommend that you visit Security Guidelines┬áand Terms and Conditions for more comprehensive information on this aspect.Please note that Naukri will not be responsible for any information you share on the company platform.
+
+Connect with us
+About us
+Careers
+Employer home
+Sitemap
+Credits
+Help center
+Summons/Notices
+Grievances
+Report issue
+Privacy policy
+Terms & conditions
+Fraud alert
+Trust & safety
+Apply on the go
+Get real-time job updates on our App
+All trademarks are the property of their respective owners
+All rights reserved ┬⌐ 2025 Info Edge (India) Ltd.
+Our businesses
